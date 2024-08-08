@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML forms</title>
+</head>
+
+<body>
+
+    <h1>HTML forms</h1>
+
+    <form onsubmit={surprise}>
+
+
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username" placeholder="your unique username...">
+        <br><br>
+        <label for="email">Enter email:</label>
+        <input type="email" id="Enter email" name="email" placeholder="your personal email address..." required>
+        <br><br>
+        <label for="password">Enter a password:</label>
+        <input type="password" id="password" name="password" placeholder="choose a unique password...">
+
+        <p>Select your age:</p>
+        <input type="radio" name="age" value="0-25" id="option 1">
+        <label for="option 1">0-25</label>
+        <input type="radio" name="age" value="26-30" id="option 2">
+        <label for="option 2">26-30</label>
+        <input type="radio" name="age" value="31-36" id="option 3">
+        <label for="option 3">31-36</label>
+        <input type="radio" name="age" value="36+" id="option 4">
+        <label for="option 4">36+</label>
+
+        <br><br>
+
+        <label for="questions">Security questions:</label>
+        <select name="questions" id="questions">
+            <option value="q1">What is your favourite colour</option>
+            <option value="q2">What is the name of your best friend</option>
+            <option value="q3">What is your favourite country</option>
+        </select>
+
+        <br><br>
+
+        <label for="answer">Security question answer:</label>
+        <input type="text" id="answer" name="answer"> 
+
+        <br><br>
+    
+
+       <label for="bio">Enter your bio:</label><br>
+       <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you.."></textarea>
+
+       <br><br>
+       <input type="submit" value="Submit the form">
+       
+
+       
+    </form>
+
+    
+</body>
+
+</html>
